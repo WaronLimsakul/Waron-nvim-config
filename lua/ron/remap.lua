@@ -1,6 +1,6 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>fm", function()
+vim.keymap.set("n", "<leader>f", function()
     vim.lsp.buf.format({ async = true })
 end, { noremap = true, silent = true, desc = "format success" })
 
@@ -19,3 +19,17 @@ vim.keymap.set("x", "<leader>p", "\"_dP") -- delete highlight word and paste buf
 
 vim.keymap.set("n", "<leader>y", "\"+y") -- copy  to clipboard
 vim.keymap.set("v", "<leader>y", "\"+y") -- copy to clipboard in visual mode.
+
+vim.keymap.set("n", "<leader>d", "\"_d") -- delete somethig and send to the void register.
+vim.keymap.set("v", "<leader>d", "\"_d") -- likewise, but in visual mode.
+
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz") -- jump to next quick fix (apply globally)
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz") -- likewise, but previous
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz") -- jump to next location list (locally)
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz") -- likewise, but previous
+
+-- can replace a word that we are on. (change all over the file)
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- make the current file executable, not useful for me right now.
+-- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
