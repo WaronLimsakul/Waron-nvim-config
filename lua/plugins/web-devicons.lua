@@ -1,2 +1,2 @@
--- try to install to use with tree.nvim at first, but feels like netwrk is enough.
+-- try to install to use with tree.nvim at first, but feels like netrw is enough.
 return {"nvim-tree/nvim-web-devicons"}
