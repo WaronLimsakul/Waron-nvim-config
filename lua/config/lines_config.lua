@@ -14,8 +14,8 @@ vim.opt.incsearch = true -- make search more flexible.
 vim.opt.termguicolors = true -- good colors, I guess
 vim.opt.scrolloff = 8 -- when scrolling, you have 8 lines margin.
 
-vim.opt.updatetime = 50 -- fase update time
+vim.opt.updatetime = 50 -- fast update time
 
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100" -- about 100 columns is ok for me.
 
 
