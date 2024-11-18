@@ -1,1 +1,4 @@
-return { "ellisonleao/gruvbox.nvim" }
+return { "ellisonleao/gruvbox.nvim",
+config = function()
+    require("config.scheme_config")
+    end}

@@ -7,7 +7,7 @@ vim.o.softtabstop = 4  -- How many spaces a tab feels like when editing
 vim.o.expandtab = true -- Convert tabs to spaces
 vim.o.smartindent = true -- Automatically indent new lines
 
--- vim.opt.guicursor = "" -- set a FAT cursor (can't tell the different between modes, no thanks)
+vim.opt.guicursor = "" -- set a FAT cursor (up to my mood)
 vim.opt.hlsearch = false -- no highlight when search
 vim.opt.incsearch = true -- make search more flexible.
 

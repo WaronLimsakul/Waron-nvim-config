@@ -1,1 +1,4 @@
-return {"mbbill/undotree"}
+return {"mbbill/undotree",
+config = function()
+require("config.undotree_config")
+    end}
