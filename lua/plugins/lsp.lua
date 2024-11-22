@@ -11,6 +11,7 @@ return {
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
             "j-hui/fidget.nvim",
+            'rafamadriz/friendly-snippets'
         },
         config = function()
             require("config.lsp_config")
@@ -18,7 +19,9 @@ return {
     },
     {
         "hrsh7th/nvim-cmp",
-        dependencies = { { "roobert/tailwindcss-colorizer-cmp.nvim", config = true } },
+        dependencies = {
+            { "roobert/tailwindcss-colorizer-cmp.nvim", config = true },
+        },
         opts = function(_, opts)
             opts.formatting = {
                 format = require("tailwindcss-colorizer-cmp").formatter,

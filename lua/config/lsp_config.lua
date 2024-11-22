@@ -17,6 +17,7 @@ local cmp = require("cmp")
 local cmp_nvim_lsp = require('cmp_nvim_lsp')
 local capabilities = cmp_nvim_lsp.default_capabilities()
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
+require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({
     sources = {
