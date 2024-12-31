@@ -16,6 +16,6 @@ vim.opt.scrolloff = 8 -- when scrolling, you have 8 lines margin.
 
 vim.opt.updatetime = 50 -- fast update time
 
-vim.opt.colorcolumn = "100" -- about 100 columns is ok for me.
+vim.opt.colorcolumn = "80"
 
 
