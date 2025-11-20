@@ -1,0 +1,6 @@
+require("config.lazy")
+require("ron.remap")
+require("config.lines_config")
+require("ron.line_number")
+require("ron.set")
+require("config.scheme_config")
